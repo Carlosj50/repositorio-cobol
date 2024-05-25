@@ -1,0 +1,25 @@
+      *********************************************************
+      *                                                        
+      *    PROGRAMA HOLA MAMONES DE CICS-COBOL                 
+      *                                                        
+      *********************************************************
+       IDENTIFICATION DIVISION.                                
+       PROGRAM-ID. HOLA.                                      
+       ENVIRONMENT DIVISION.                                   
+       DATA DIVISION.                                          
+       WORKING-STORAGE SECTION.                                
+       01  HOLAMPI.                                            
+           02  FILLER PIC X(12).                               
+       01  HOLAMPO REDEFINES HOLAMPI.                          
+           02  FILLER PIC X(12).                               
+       PROCEDURE DIVISION.                                     
+       MOSTRAR-MAPA.   
+           EXEC CICS SEND MAP('HOLAMP')
+              MAPONLY                  
+              ERASE                    
+              NOHANDLE                 
+           END-EXEC.                   
+       FIN-PGM.                           
+           EXEC CICS RETURN            
+           END-EXEC.                   
+           GOBACK.                                                              

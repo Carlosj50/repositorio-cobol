@@ -1,0 +1,15 @@
+HOLAMP   DFHMSD TYPE=DSECT,MODE=INOUT,TERM=ALL,STORAGE=AUTO,LANG=COBOL  
+HOLAMP   DFHMDI SIZE=(24,80),LINE=1,COLUMN=1,COLOR=GREEN,HILIGHT=OFF,  *
+               MAPATTS=(COLOR,HILIGHT),DSATTS=HILIGHT,CTRL=FREEKB       
+         DFHMDF POS=(10,10),LENGTH=20,INITIAL='********************',  *
+               COLOR=BLUE,ATTRB=(ASKIP,NORM)                            
+         DFHMDF POS=(11,10),LENGTH=20,INITIAL='*                  *',  *
+               COLOR=BLUE,ATTRB=(ASKIP,NORM)                            
+         DFHMDF POS=(12,10),LENGTH=20,INITIAL='*  HOLA, MAMONES   *',  *
+               COLOR=BLUE,ATTRB=(ASKIP,NORM)                            
+         DFHMDF POS=(13,10),LENGTH=20,INITIAL='*                  *',  *
+               COLOR=BLUE,ATTRB=(ASKIP,NORM)                            
+         DFHMDF POS=(14,10),LENGTH=20,INITIAL='********************',  *
+               COLOR=BLUE,ATTRB=(ASKIP,NORM)                            
+         DFHMSD TYPE=FINAL                                              
+         END                                                            
